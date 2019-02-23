@@ -7,7 +7,7 @@ function equation(){
             document.getElementById("nbraff00").innerHTML = ("C'est une equation du prémier degré");
             document.getElementById("nbraff00").innerHTML = ("Il n'y a qu'un seul solution.");
             resultat1 = -(parseInt(nbr3)) / (parseInt(nbr2));
-            document.getElementById("nbraff1").innerHTML = (" x' = " + parseFloat(resultat1));
+            document.getElementById("nbraff1").innerHTML = (" x = " + parseFloat(resultat1));
         }
         else{
             document.getElementById("nbraff1").innerHTML = ("Impossible.");
