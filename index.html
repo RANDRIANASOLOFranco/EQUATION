@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eqauation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <header>
+            <div class="titre1">RESOLUTION D'EQUATION</div>
+            <div class="titre2">ax<sup>2</sup> + bx + c = 0</div>
+    </header>
+    <div class="container zone">
+        <div class="row">
+            <div class="col-md-2">
+                    
+            </div>
+            <div class="col-md-8">
+                <input type="number" name="" id="valeur1" class="saisi" placeholder="Coefficient a">
+                <label for="">X<sup>2</sup> + </label>
+                <input type="number" name="" id="valeur2" class="saisi" placeholder="Coefficient b">
+                <label for="">X + </label>
+                <input type="number" name="" id="valeur3" class="saisi" placeholder="Coefficient c"> = 0 <br>
+            </div>
+            <div class="col-md-2">
+                   
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                        
+                </div>
+                <div class="col-md-8 affiche">
+                    <button class="saisi" onclick="equation();">Resultat</button> <br>
+                    ∆ = b<sup>2</sup> - 4ac = <b id="deltataff"></b> <br> 
+                    <div class="solution">Solution : </div> <br>
+                    <b class="couleur" id="nbraff0"></b> <br>
+                    <b class="couleur" id="nbraff00"></b> <br>  
+                    <b class="couleur" id="nbraff1"></b> <br> 
+                    <b class="couleur" id="nbraff2"></b> <br>
+                </div>
+                <div class="col-md-2">
+                       
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="about">Resolution d'equation du prémiere et du seconed degré.</div>
+                        <div class="info"> © RANDRIANASOLO Franco</div>
+                        <div class="ver">Version 1.0 (23 / 02 / 2019)</div>       
+                    </div>
+                    <div class="col-md-4">
+                        <table>
+                            <tr>
+                                <td><img src="fb.png" alt="" class="icone"></td>
+                                <td class="a">Franco Legende</td>
+                            </tr>
+                            <tr>
+                                <td> <img src="tel.png" alt="" class="icone"></td>
+                                <td class="a"> +261 32 59 684 95</td>
+                            </tr>
+                            <tr>
+                                <td> <img src="local.png" alt="" class="icone"></td>
+                                <td>Cité BA MC Antanimora - Antananarivo II</td>
+                            </tr>
+                        </table>        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="js/bootstrap.js"></script>
+    <script src="equation.js"></script>
+</body>
+</html>
