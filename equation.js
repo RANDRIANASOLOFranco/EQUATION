@@ -2,18 +2,18 @@ function equation(){
     var nbr1 = document.getElementById("valeur1").value;
     var nbr2 = document.getElementById("valeur2").value;
     var nbr3 = document.getElementById("valeur3").value;
-    if (nbr1==0){
-        if(nbr2!=0){
+    if (nbr1==0){ //Si la valeur de a est egale a zero
+        if(nbr2!=0){ //Si la valeur de a est egale a zero et la valeur b est different de zero
             document.getElementById("nbraff00").innerHTML = ("C'est une equation du prémier degré");
             document.getElementById("nbraff00").innerHTML = ("Il n'y a qu'un seul solution.");
             resultat1 = -(parseInt(nbr3)) / (parseInt(nbr2));
             document.getElementById("nbraff1").innerHTML = (" x = " + parseFloat(resultat1));
         }
-        else{
+        else{ //Si la valeur de a et b sont egale a zero
             document.getElementById("nbraff1").innerHTML = ("Impossible.");
         }
     }
-    else{
+    else{ //Si la valeur de a est diffrent de zero
         var deltat = (parseInt(nbr2)*parseInt(nbr2))-(4*parseInt(nbr1)*parseInt(nbr3));
         if (deltat>0){
             resultat1 = (-(parseInt(nbr2))-(Math.sqrt(deltat)))/(2*(parseInt(nbr1)));
